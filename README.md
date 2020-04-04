@@ -1,6 +1,53 @@
 # StatusItemController
 
-⚠️ work in progress ⚠️ 
+*A component to simplify managing macOS menu bar items*
+
+## About
+
+This library provides a `StatusItemController` component that you can use to create menu bar apps, or apps with menu bar items in macOS.
+
+This component is used in [Red Eye](https://www.hexedbits.com/redeye/) and [Lucifer](https://www.hexedbits.com/lucifer/).
+
+## Usage
+
+> TODO
+
+## Requirements
+
+- macOS 10.12+
+- Swift 5.2+
+- Xcode 11.4+
+- SwiftLint
+
+## Installation
+
+### [Swift Package Manager](https://swift.org/package-manager/)
+
+Add `StatusItemController` to the `dependencies` value of your `Package.swift`.
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/hexedbits/StatusItemController", from: "1.0.0")
+]
+```
+
+Alternatively, you can add the package [directly via Xcode](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app).
+
+## Documentation
+
+Read the [docs](https://hexedbits.github.io/StatusItemController). Generated with [jazzy](https://github.com/realm/jazzy). Hosted by [GitHub Pages](https://pages.github.com).
+
+#### Generate
+
+````bash
+$ ./scripts/build_docs.sh
+````
+
+#### Preview
+
+````bash
+$ open index.html -a Safari
+````
 
 ## Contributing
 
