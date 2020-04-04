@@ -1,5 +1,7 @@
 # StatusItemController
 
+[![Actions Status](https://github.com/hexedbits/StatusItemController/workflows/CI/badge.svg)](https://github.com/hexedbits/StatusItemController/actions)
+
 *A component to simplify managing macOS menu bar items*
 
 ## About
