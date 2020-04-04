@@ -1,31 +1,31 @@
 //
-// Created by Jesse Squires on 4/4/20.
-// Copyright © 2020 Hexed Bits. All rights reserved.
-// 
+//  Created by Jesse Squires
+//  https://www.jessesquires.com
+//
+//  Documentation
+//  https://hexedbits.github.io/StatusItemController
+//
+//  GitHub
+//  https://github.com/hexedbits/StatusItemController
+//
+//  Copyright © 2020-present Jesse Squires, Hexed Bits
+//  https://www.hexedbits.com
+//
 
 import XCTest
 @testable import StatusItemController
 
-class StatusItemControllerTests: XCTestCase {
+final class StatusItemControllerTests: XCTestCase {
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        try super.tearDownWithError()
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssert(true)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
