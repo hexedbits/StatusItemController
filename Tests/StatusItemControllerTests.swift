@@ -12,8 +12,8 @@
 //  https://www.hexedbits.com
 //
 
-import XCTest
 @testable import StatusItemController
+import XCTest
 
 final class StatusItemControllerTests: XCTestCase {
 

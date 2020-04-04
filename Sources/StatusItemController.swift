@@ -14,7 +14,6 @@
 
 import Foundation
 
-
 /// Controller for an `NSStatusItem`. Designed to be subclassed.
 open class StatusItemController {
 
