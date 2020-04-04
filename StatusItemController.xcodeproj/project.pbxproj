@@ -10,6 +10,7 @@
 		886C102024393069008D8DEA /* StatusItemController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886C101624393069008D8DEA /* StatusItemController.framework */; };
 		886C102524393069008D8DEA /* StatusItemControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886C102424393069008D8DEA /* StatusItemControllerTests.swift */; };
 		886C1031243930C4008D8DEA /* StatusItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886C1030243930C4008D8DEA /* StatusItemController.swift */; };
+		886C103E24394746008D8DEA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886C103D24394746008D8DEA /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		886C102424393069008D8DEA /* StatusItemControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusItemControllerTests.swift; sourceTree = "<group>"; };
 		886C102624393069008D8DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		886C1030243930C4008D8DEA /* StatusItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusItemController.swift; sourceTree = "<group>"; };
+		886C103D24394746008D8DEA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		886C101824393069008D8DEA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				886C103D24394746008D8DEA /* Extensions.swift */,
 				886C101A24393069008D8DEA /* Info.plist */,
 				886C1030243930C4008D8DEA /* StatusItemController.swift */,
 			);
@@ -80,8 +83,8 @@
 		886C102324393069008D8DEA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				886C102424393069008D8DEA /* StatusItemControllerTests.swift */,
 				886C102624393069008D8DEA /* Info.plist */,
+				886C102424393069008D8DEA /* StatusItemControllerTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				886C1031243930C4008D8DEA /* StatusItemController.swift in Sources */,
+				886C103E24394746008D8DEA /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
