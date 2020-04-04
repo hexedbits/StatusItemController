@@ -1,5 +1,8 @@
 .DS_Store
+
+# spm
 .swiftpm
+.build
 
 # Xcode
 #
