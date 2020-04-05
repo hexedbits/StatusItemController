@@ -12,7 +12,12 @@ This component is used in [Red Eye](https://www.hexedbits.com/redeye/) and [Luci
 
 ## Usage
 
-> TODO
+1. Subclass `StatusItemController`
+1. Implement the following methods: 
+    1. `buildMenu() -> NSMenu`
+    1. `leftClickAction()`
+    1. `rightClickAction()`
+1. Create an instance of your `StatusItemController` subclass in your `NSApplicationDelegate`.
 
 ## Requirements
 
