@@ -67,9 +67,17 @@
 <p>This component is used in <a href="https://www.hexedbits.com/redeye/">Red Eye</a> and <a href="https://www.hexedbits.com/lucifer/">Lucifer</a>.</p>
 <h2 id='usage' class='heading'>Usage</h2>
 
-<blockquote>
-<p>TODO</p>
-</blockquote>
+<ol>
+<li>Subclass <code><a href="Classes/StatusItemController.html">StatusItemController</a></code></li>
+<li>Implement the following methods: 
+
+<ol>
+<li><code>buildMenu() -&gt; NSMenu</code></li>
+<li><code>leftClickAction()</code></li>
+<li><code>rightClickAction()</code></li>
+</ol></li>
+<li>Create an instance of your <code><a href="Classes/StatusItemController.html">StatusItemController</a></code> subclass in your <code>NSApplicationDelegate</code>.</li>
+</ol>
 <h2 id='requirements' class='heading'>Requirements</h2>
 
 <ul>
