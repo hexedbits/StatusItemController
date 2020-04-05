@@ -17,14 +17,20 @@ import Foundation
 import IOKit.pwr_mgt
 
 /// Controller for an `NSStatusItem`. Designed to be subclassed.
+/// - Warning: You must subclass this controller.
 open class StatusItemController: NSObject, NSMenuDelegate {
 
     // MARK: Properties
 
+    /// The status item.
     public let statusItem: NSStatusItem
 
     // MARK: Init
 
+    /// Creates a new `StatusItemController`.
+    /// - Parameters:
+    ///   - image: An image for the status item button.
+    ///   - length: The length of the status item.
     public init(image: NSImage, length: CGFloat = NSStatusItem.squareLength) {
         self.statusItem = NSStatusBar.system.statusItem(withLength: length)
         super.init()
@@ -35,20 +41,30 @@ open class StatusItemController: NSObject, NSMenuDelegate {
         self.statusItem.button?.sendAction(on: [.leftMouseDown, .rightMouseUp])
     }
 
+    /// :nodoc:
     deinit {
         NSStatusBar.system.removeStatusItem(self.statusItem)
     }
 
     // MARK: Open methods
 
+    /// Constructs an `NSMenu` to display for the status item.
+    /// - Returns: A menu object.
+    /// - Warning: You must override this method.
     open func buildMenu() -> NSMenu { NSMenu() }
 
+    /// The action to be executed on the `.leftMouseDown` event.
+    /// - Warning: You must override this method.
     open func leftClickAction() { }
 
+    /// The action to be executed on `.rightMouseUp` event.
+    /// - Warning: You must override this method.
     open func rightClickAction() { }
 
     // MARK: Actions
 
+    /// Opens the status item menu.
+    /// You may which to call this from `leftClickAction()` or `rightClickAction()`.
     public func openMenu() {
         // Yes, this is deprecated, however there seems to be a bug in AppKit.
         // Without using this method, the menu does not popup immediately,
@@ -56,13 +72,16 @@ open class StatusItemController: NSObject, NSMenuDelegate {
         self.statusItem.popUpMenu(self._configureMenu(hidden: false)!)
     }
 
+    /// Hides the status item menu.
     public func hideMenu() {
         self._configureMenu(hidden: true)
     }
 
+    /// Quits the application.
+    /// You may wish to create an `NSMenuItem` that calls this method.
     @objc
     public func quit() {
-        NSApplication.shared.terminate(self)
+        NSApp.terminate(self)
     }
 
     // MARK: Private
@@ -90,6 +109,7 @@ open class StatusItemController: NSObject, NSMenuDelegate {
 
     // MARK: NSMenuDelegate
 
+    /// :nodoc:
     public func menuDidClose(_ menu: NSMenu) {
         self._configureMenu(hidden: true)
     }
