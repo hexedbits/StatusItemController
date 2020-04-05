@@ -13,8 +13,6 @@
 //
 
 import Cocoa
-import Foundation
-import IOKit.pwr_mgt
 
 /// Controller for an `NSStatusItem`. Designed to be subclassed.
 /// - Warning: You must subclass this controller.
