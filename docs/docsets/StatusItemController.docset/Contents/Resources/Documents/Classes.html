@@ -32,7 +32,21 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes.html#/s:20StatusItemControllerAAC">StatusItemController</a>
+                <a href="Classes/StatusItemController.html">StatusItemController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/NSApplication.html">NSApplication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/NSEvent.html">NSEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/NSMenuItem.html">NSMenuItem</a>
               </li>
             </ul>
           </li>
@@ -51,9 +65,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:20StatusItemControllerAAC"></a>
+                    <a name="/c:@M@StatusItemController@objc(cs)StatusItemController"></a>
                     <a name="//apple_ref/swift/Class/StatusItemController" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20StatusItemControllerAAC">StatusItemController</a>
+                    <a class="token" href="#/c:@M@StatusItemController@objc(cs)StatusItemController">StatusItemController</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -62,13 +76,19 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Controller for an <code>NSStatusItem</code>. Designed to be subclassed.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    You must subclass this controller.
 
+</div>
+
+                        <a href="Classes/StatusItemController.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">StatusItemController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">StatusItemController</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSMenuDelegate</span></code></pre>
 
                         </div>
                       </div>

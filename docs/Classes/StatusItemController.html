@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>StatusItemController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/StatusItemController" class="dashAnchor"></a>
+    <a title="StatusItemController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">StatusItemController Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/hexedbits/StatusItemController"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">StatusItemController Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        StatusItemController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/StatusItemController.html">StatusItemController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSApplication.html">NSApplication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSEvent.html">NSEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSMenuItem.html">NSMenuItem</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>StatusItemController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">StatusItemController</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSMenuDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Controller for an <code>NSStatusItem</code>. Designed to be subclassed.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    You must subclass this controller.
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><p>Properties</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20StatusItemControllerAAC06statusB0So08NSStatusB0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/statusItem" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20StatusItemControllerAAC06statusB0So08NSStatusB0Cvp">statusItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The status item.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">statusItem</span><span class="p">:</span> <span class="kt">NSStatusItem</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Init"></a>
+                <a name="//apple_ref/swift/Section/Init" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Init"></a>
+                  <h3 class="section-name"><p>Init</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20StatusItemControllerAAC5image6lengthABSo7NSImageC_12CoreGraphics7CGFloatVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(image:length:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20StatusItemControllerAAC5image6lengthABSo7NSImageC_12CoreGraphics7CGFloatVtcfc">init(image:<wbr>length:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new <code>StatusItemController</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">image</span><span class="p">:</span> <span class="kt">NSImage</span><span class="p">,</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="kt">NSStatusItem</span><span class="o">.</span><span class="n">squareLength</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An image for the status item button.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>length</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The length of the status item.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Open%20methods"></a>
+                <a name="//apple_ref/swift/Section/Open methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Open%20methods"></a>
+                  <h3 class="section-name"><p>Open methods</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20StatusItemControllerAAC9buildMenuSo6NSMenuCyF"></a>
+                    <a name="//apple_ref/swift/Method/buildMenu()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20StatusItemControllerAAC9buildMenuSo6NSMenuCyF">buildMenu()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constructs an <code>NSMenu</code> to display for the status item.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    You must override this method.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">buildMenu</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">NSMenu</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A menu object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20StatusItemControllerAAC15leftClickActionyyF"></a>
+                    <a name="//apple_ref/swift/Method/leftClickAction()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20StatusItemControllerAAC15leftClickActionyyF">leftClickAction()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The action to be executed on the <code>.leftMouseDown</code> event.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    You must override this method.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">leftClickAction</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20StatusItemControllerAAC16rightClickActionyyF"></a>
+                    <a name="//apple_ref/swift/Method/rightClickAction()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20StatusItemControllerAAC16rightClickActionyyF">rightClickAction()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The action to be executed on <code>.rightMouseUp</code> event.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    You must override this method.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">rightClickAction</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Actions"></a>
+                <a name="//apple_ref/swift/Section/Actions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Actions"></a>
+                  <h3 class="section-name"><p>Actions</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20StatusItemControllerAAC8openMenuyyF"></a>
+                    <a name="//apple_ref/swift/Method/openMenu()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20StatusItemControllerAAC8openMenuyyF">openMenu()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Opens the status item menu.
+You may which to call this from <code><a href="../Classes/StatusItemController.html#/s:20StatusItemControllerAAC15leftClickActionyyF">leftClickAction()</a></code> or <code><a href="../Classes/StatusItemController.html#/s:20StatusItemControllerAAC16rightClickActionyyF">rightClickAction()</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">openMenu</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20StatusItemControllerAAC8hideMenuyyF"></a>
+                    <a name="//apple_ref/swift/Method/hideMenu()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20StatusItemControllerAAC8hideMenuyyF">hideMenu()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hides the status item menu.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">hideMenu</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@StatusItemController@objc(cs)StatusItemController(im)quit"></a>
+                    <a name="//apple_ref/swift/Method/quit()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@StatusItemController@objc(cs)StatusItemController(im)quit">quit()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Quits the application.
+You may wish to create an <code>NSMenuItem</code> that calls this method.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">quit</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://jessesquires.com" target="_blank" rel="external">Jesse Squires</a>. All rights reserved. (Last updated: 2020-04-04)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

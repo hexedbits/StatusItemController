@@ -31,7 +31,21 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes.html#/s:20StatusItemControllerAAC">StatusItemController</a>
+                <a href="Classes/StatusItemController.html">StatusItemController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/NSApplication.html">NSApplication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/NSEvent.html">NSEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/NSMenuItem.html">NSMenuItem</a>
               </li>
             </ul>
           </li>
@@ -43,7 +57,46 @@
             
             <h1 id='statusitemcontroller' class='heading'>StatusItemController</h1>
 
-<p>⚠️ work in progress ⚠️ </p>
+<p><a href="https://github.com/hexedbits/StatusItemController/actions"><img src="https://github.com/hexedbits/StatusItemController/workflows/CI/badge.svg" alt="Actions Status"></a></p>
+
+<p><em>A component to simplify managing macOS menu bar items</em></p>
+<h2 id='about' class='heading'>About</h2>
+
+<p>This library provides a <code><a href="Classes/StatusItemController.html">StatusItemController</a></code> component that you can use to create menu bar apps, or apps with menu bar items in macOS.</p>
+
+<p>This component is used in <a href="https://www.hexedbits.com/redeye/">Red Eye</a> and <a href="https://www.hexedbits.com/lucifer/">Lucifer</a>.</p>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<blockquote>
+<p>TODO</p>
+</blockquote>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>macOS 10.12+</li>
+<li>Swift 5.2+</li>
+<li>Xcode 11.4+</li>
+<li>SwiftLint</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='a-href-https-swift-org-package-manager-swift-package-manager-a' class='heading'><a href="https://swift.org/package-manager/">Swift Package Manager</a></h3>
+
+<p>Add <code><a href="Classes/StatusItemController.html">StatusItemController</a></code> to the <code>dependencies</code> value of your <code>Package.swift</code>.</p>
+<pre class="highlight swift"><code><span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/hexedbits/StatusItemController"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"1.0.0"</span><span class="p">)</span>
+<span class="p">]</span>
+</code></pre>
+
+<p>Alternatively, you can add the package <a href="https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app">directly via Xcode</a>.</p>
+<h2 id='documentation' class='heading'>Documentation</h2>
+
+<p>Read the <a href="https://hexedbits.github.io/StatusItemController">docs</a>. Generated with <a href="https://github.com/realm/jazzy">jazzy</a>. Hosted by <a href="https://pages.github.com">GitHub Pages</a>.</p>
+<h4 id='generate' class='heading'>Generate</h4>
+<pre class="highlight shell"><code><span class="nv">$ </span>./scripts/build_docs.sh
+</code></pre>
+<h4 id='preview' class='heading'>Preview</h4>
+<pre class="highlight shell"><code><span class="nv">$ </span>open index.html <span class="nt">-a</span> Safari
+</code></pre>
 <h2 id='contributing' class='heading'>Contributing</h2>
 
 <p>Interested in making contributions to this project? Please review the guides below.</p>
