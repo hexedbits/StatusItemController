@@ -2,7 +2,7 @@
 
 [![Actions Status](https://github.com/hexedbits/StatusItemController/workflows/CI/badge.svg)](https://github.com/hexedbits/StatusItemController/actions)
 
-*A component to simplify managing macOS menu bar items*
+*A "view controller" for menu bar Mac apps*
 
 ## About
 
