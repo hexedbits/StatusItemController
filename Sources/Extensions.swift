@@ -47,7 +47,7 @@ extension NSMenuItem {
     ///   - keyEquivalent: A string representing a keyboard key to be used as the key equivalent.
     ///   - isEnabled: A Boolean value that indicates whether the menu item is enabled.
     public convenience init(title: String,
-                            target: AnyObject,
+                            target: AnyObject? = nil,
                             action: Selector? = nil,
                             keyEquivalent: String = "",
                             isEnabled: Bool = true) {
