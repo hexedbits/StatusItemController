@@ -51,6 +51,9 @@ open class StatusItemController: NSObject, NSMenuDelegate {
     /// - Warning: You must override this method.
     open func buildMenu() -> NSMenu { NSMenu() }
 
+
+    // TODO: fix me
+
     /// The action to be executed on the `.leftMouseDown` event.
     /// - Warning: You must override this method.
     open func leftClickAction() { }

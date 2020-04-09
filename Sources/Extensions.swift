@@ -35,6 +35,8 @@ extension NSApplication {
         }
         return false
     }
+
+    
 }
 
 extension NSMenuItem {

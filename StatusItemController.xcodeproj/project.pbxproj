@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		884346B2243FAE0400C176DF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884346B1243FAE0400C176DF /* File.swift */; };
 		886C102024393069008D8DEA /* StatusItemController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886C101624393069008D8DEA /* StatusItemController.framework */; };
 		886C102524393069008D8DEA /* StatusItemControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886C102424393069008D8DEA /* StatusItemControllerTests.swift */; };
 		886C1031243930C4008D8DEA /* StatusItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886C1030243930C4008D8DEA /* StatusItemController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		884346B1243FAE0400C176DF /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		886C101624393069008D8DEA /* StatusItemController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StatusItemController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		886C101A24393069008D8DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		886C101F24393069008D8DEA /* StatusItemControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusItemControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 				886C103D24394746008D8DEA /* Extensions.swift */,
 				886C101A24393069008D8DEA /* Info.plist */,
 				886C1030243930C4008D8DEA /* StatusItemController.swift */,
+				884346B1243FAE0400C176DF /* File.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				886C1031243930C4008D8DEA /* StatusItemController.swift in Sources */,
+				884346B2243FAE0400C176DF /* File.swift in Sources */,
 				886C103E24394746008D8DEA /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
