@@ -17,7 +17,7 @@ env:
   SCHEME: StatusItemController
 
 jobs:
-  job-build-test-lint:
+  job-build-test:
     name: Build and Test
     runs-on: macOS-latest
     steps:
