@@ -62,7 +62,7 @@ open class StatusItemController: NSObject, NSMenuDelegate {
     // MARK: Actions
 
     /// Opens the status item menu.
-    /// You may which to call this from `leftClickAction()` or `rightClickAction()`.
+    /// You may wish to call this from `leftClickAction()` or `rightClickAction()`.
     public func openMenu() {
         // Yes, this is deprecated, however there seems to be a bug in AppKit.
         // Without using this method, the menu does not popup immediately,
