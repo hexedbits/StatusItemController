@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 #  Created by Jesse Squires
 #  https://www.jessesquires.com
@@ -9,7 +9,7 @@
 #  https://github.com/realm/jazzy/releases/latest
 #  ------------------------------
 
-VERSION="0.13.3"
+VERSION="0.13.5"
 
 FOUND=$(jazzy --version)
 LINK="https://github.com/realm/jazzy"
@@ -22,7 +22,7 @@ if which jazzy >/dev/null; then
         --clean \
         --author "Jesse Squires" \
         --author_url "https://jessesquires.com" \
-        --github_url "https://github.com/hexedbits/$PROJECT" \
+        --github_url "https://github.com/jessesquires/$PROJECT" \
         --module "$PROJECT" \
         --source-directory . \
         --readme "README.md" \
