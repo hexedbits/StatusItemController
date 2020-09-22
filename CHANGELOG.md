@@ -4,8 +4,12 @@ The changelog for `StatusItemController`. Also see the [releases](https://github
 
 ---
 
-NEXT
-----
+1.1.0
+-----
+
+### Changes
+
+- Upgraded to Swift 5.3 and Xcode 12
 
 - Changed the `target` parameter in the `NSMenuItem` convenience initializer to be optional, with a default value of `nil`.
 

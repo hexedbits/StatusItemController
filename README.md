@@ -13,7 +13,7 @@ This component is used in [Red Eye](https://www.hexedbits.com/redeye/) and [Luci
 ## Usage
 
 1. Subclass `StatusItemController`
-1. Implement the following methods: 
+1. Implement the following methods:
     1. `buildMenu() -> NSMenu`
     1. `leftClickAction()`
     1. `rightClickAction()`
@@ -22,8 +22,8 @@ This component is used in [Red Eye](https://www.hexedbits.com/redeye/) and [Luci
 ## Requirements
 
 - macOS 10.12+
-- Swift 5.2+
-- Xcode 11.4+
+- Swift 5.3+
+- Xcode 12.0+
 - SwiftLint
 
 ## Installation

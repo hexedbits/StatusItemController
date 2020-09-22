@@ -34,7 +34,7 @@ let package = Package(
         .testTarget(name: "StatusItemControllerTests",
                     dependencies: ["StatusItemController"],
                     path: "Tests",
-                    exclude: ["Info.plist"]),
+                    exclude: ["Info.plist"])
     ],
     swiftLanguageVersions: [.v5]
 )
