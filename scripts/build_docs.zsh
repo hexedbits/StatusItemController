@@ -22,7 +22,7 @@ if which jazzy >/dev/null; then
         --clean \
         --author "Jesse Squires" \
         --author_url "https://jessesquires.com" \
-        --github_url "https://github.com/jessesquires/$PROJECT" \
+        --github_url "https://github.com/hexedbits/$PROJECT" \
         --module "$PROJECT" \
         --source-directory . \
         --readme "README.md" \
