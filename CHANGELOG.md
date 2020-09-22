@@ -4,8 +4,15 @@ The changelog for `StatusItemController`. Also see the [releases](https://github
 
 ---
 
+NEXT
+----
+
+- TBA
+
 1.1.0
 -----
+
+This release closes the [1.1.0 milestone](https://github.com/hexedbits/StatusItemController/milestone/1?closed=1).
 
 ### Changes
 
