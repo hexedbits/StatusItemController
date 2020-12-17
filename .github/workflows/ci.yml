@@ -3,16 +3,17 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - main
       - dev
   pull_request:
     branches:
-      - master
+      - main
       - dev
+
 env:
   # https://github.com/actions/virtual-environments/tree/main/images/macos
-  DEVELOPER_DIR: /Applications/Xcode_12.app/Contents/Developer
-  MACOS_SDK: macosx10.15
+  DEVELOPER_DIR: /Applications/Xcode_12.3.app/Contents/Developer
+  MACOS_SDK: macosx11.1
 
   PROJECT: StatusItemController.xcodeproj
   SCHEME: StatusItemController
