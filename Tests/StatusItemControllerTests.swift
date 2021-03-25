@@ -26,7 +26,8 @@ final class StatusItemControllerTests: XCTestCase {
     }
 
     func test_BuildMenuIsCalled_ForOpenMenu() {
-        let controller = TestController()
+        let img = NSImage()
+        let controller = TestController(image: img)
 
         let expectation = self.expectation()
         controller.buildMenuExpectation = expectation
@@ -36,7 +37,8 @@ final class StatusItemControllerTests: XCTestCase {
     }
 
     func test_BuildMenuIsNotCalled_ForHideMenu() {
-        let controller = TestController()
+        let img = NSImage()
+        let controller = TestController(image: img)
 
         let expectation = self.expectation()
         expectation.isInverted = true
@@ -47,7 +49,8 @@ final class StatusItemControllerTests: XCTestCase {
     }
 
     func test_LeftClickAction_isCalled() {
-        let controller = TestController()
+        let img = NSImage()
+        let controller = TestController(image: img)
 
         let leftExpectation = self.expectation()
         let rightExpectation = self.expectation()
@@ -80,14 +83,6 @@ final class TestController: StatusItemController {
     var buildMenuExpectation: XCTestExpectation?
     var leftClickExpectation: XCTestExpectation?
     var rightClickExpectation: XCTestExpectation?
-
-    override init(image: NSImage, length: CGFloat = NSStatusItem.squareLength) {
-        super.init(image: image, length: length)
-    }
-
-    init() {
-        super.init(image: NSImage())
-    }
 
     override public func buildMenu() -> NSMenu {
         self.buildMenuExpectation!.fulfill()

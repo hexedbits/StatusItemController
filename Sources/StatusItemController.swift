@@ -12,7 +12,7 @@
 //  https://www.hexedbits.com
 //
 
-import Cocoa
+import AppKit
 
 /// Controller for an `NSStatusItem`. Designed to be subclassed.
 /// - Warning: You must subclass this controller.

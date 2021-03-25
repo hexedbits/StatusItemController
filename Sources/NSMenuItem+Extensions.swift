@@ -12,30 +12,7 @@
 //  https://www.hexedbits.com
 // 
 
-import Cocoa
-
-extension NSEvent {
-
-    /// Returns `true` if the event is `.rightMouseUp` or equivalent.
-    /// Returns `false` otherwise.
-    public var isRightClickUp: Bool {
-        let rightClick = (self.type == .rightMouseUp)
-        let controlClick = self.modifierFlags.contains(.control)
-        return rightClick || controlClick
-    }
-}
-
-extension NSApplication {
-
-    /// Returns `true` if the application's current event is `.rightMouseUp` or equivalent.
-    /// Returns `false` otherwise.
-    public var isCurrentEventRightClickUp: Bool {
-        if let current = self.currentEvent {
-            return current.isRightClickUp
-        }
-        return false
-    }
-}
+import AppKit
 
 extension NSMenuItem {
 
