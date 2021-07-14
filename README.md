@@ -22,8 +22,8 @@ This component is used in [Red Eye](https://www.hexedbits.com/redeye/) and [Luci
 ## Requirements
 
 - macOS 10.12+
-- Swift 5.3+
-- Xcode 12.0+
+- Swift 5.4+
+- Xcode 12.5+
 - [SwiftLint](https://github.com/realm/SwiftLint)
 
 ## Installation
@@ -33,7 +33,7 @@ This component is used in [Red Eye](https://www.hexedbits.com/redeye/) and [Luci
 ````ruby
 pod 'StatusItemController', '~> 1.0.0'
 ````
- 
+
 ### [Swift Package Manager](https://swift.org/package-manager/)
 
 Add `StatusItemController` to the `dependencies` value of your `Package.swift`.
