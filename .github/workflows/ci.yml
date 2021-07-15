@@ -25,7 +25,7 @@ env:
   PROJECT: StatusItemController.xcodeproj
   SCHEME: StatusItemController
 
-  DEVELOPER_DIR: /Applications/Xcode_12.5.app/Contents/Developer
+  DEVELOPER_DIR: /Applications/Xcode_12.4.app/Contents/Developer
 
   MACOS_SDK: macosx11.3
   MACOS_DEST: "arch=x86_64"
