@@ -33,14 +33,14 @@ env:
 jobs:
   env-details:
     name: Environment details
-    runs-on: macOS-11
+    runs-on: macOS-latest
     steps:
       - name: xcode version
         run: xcodebuild -version -sdk
 
   test-macOS:
     name: Unit Tests
-    runs-on: macOS-11
+    runs-on: macOS-latest
     steps:
       - name: git checkout
         uses: actions/checkout@v2
