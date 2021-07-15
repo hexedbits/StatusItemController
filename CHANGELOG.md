@@ -7,7 +7,7 @@ The changelog for `StatusItemController`. Also see the [releases](https://github
 NEXT
 ----
 
-- TBA
+- Upgraded to Swift 5.4 and Xcode 12.5
 
 1.1.0
 -----

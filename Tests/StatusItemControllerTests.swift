@@ -12,22 +12,23 @@
 //  https://www.hexedbits.com
 //
 
+import AppKit
 @testable import StatusItemController
 import XCTest
 
 final class StatusItemControllerTests: XCTestCase {
 
-    func test_DefaultInitValues() throws {
-        let img = NSImage()
-        let controller = TestController(image: img)
+    let img = NSImage()
 
-        XCTAssertEqual(controller.statusItem.button?.image, img)
+    func test_DefaultInitValues() throws {
+        let controller = TestController(image: self.img)
+
+        XCTAssertEqual(controller.statusItem.button?.image, self.img)
         XCTAssertEqual(controller.statusItem.length, NSStatusItem.squareLength)
     }
 
     func test_BuildMenuIsCalled_ForOpenMenu() {
-        let img = NSImage()
-        let controller = TestController(image: img)
+        let controller = TestController(image: self.img)
 
         let expectation = self.expectation()
         controller.buildMenuExpectation = expectation
@@ -37,8 +38,7 @@ final class StatusItemControllerTests: XCTestCase {
     }
 
     func test_BuildMenuIsNotCalled_ForHideMenu() {
-        let img = NSImage()
-        let controller = TestController(image: img)
+        let controller = TestController(image: self.img)
 
         let expectation = self.expectation()
         expectation.isInverted = true
@@ -49,8 +49,7 @@ final class StatusItemControllerTests: XCTestCase {
     }
 
     func test_LeftClickAction_isCalled() {
-        let img = NSImage()
-        let controller = TestController(image: img)
+        let controller = TestController(image: self.img)
 
         let leftExpectation = self.expectation()
         let rightExpectation = self.expectation()

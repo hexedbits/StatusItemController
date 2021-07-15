@@ -1,22 +1,33 @@
+# GitHub Actions Virtual Environments
+# https://github.com/actions/virtual-environments/
+
 name: CI
 
 on:
   push:
     branches:
       - main
+    paths:
+      - '.github/workflows/ci.yml'
+      - 'Sources/**/*.*'
+      - 'Tests/**/*.*'
+      - 'Example/**/*.*'
   pull_request:
     branches:
       - main
+    paths:
+      - '.github/workflows/ci.yml'
+      - 'Sources/**/*.*'
+      - 'Tests/**/*.*'
+      - 'Example/**/*.*'
 
 env:
-  # https://github.com/actions/virtual-environments/tree/main/images/macos
-  DEVELOPER_DIR: /Applications/Xcode_12.4.app/Contents/Developer
-
-  MACOS_SDK: macosx11.1
-
   PROJECT: StatusItemController.xcodeproj
   SCHEME: StatusItemController
 
+  DEVELOPER_DIR: /Applications/Xcode_12.4.app/Contents/Developer
+
+  MACOS_SDK: macosx11.1
   MACOS_DEST: "arch=x86_64"
 
 jobs:
@@ -27,13 +38,14 @@ jobs:
       - name: xcode version
         run: xcodebuild -version -sdk
 
-  unit-tests:
+  test-macOS:
     name: Unit Tests
     runs-on: macOS-latest
     steps:
       - name: git checkout
         uses: actions/checkout@v2
-      - name: run unit tests
+
+      - name: unit tests
         run: |
           set -o pipefail
           xcodebuild clean test \
