@@ -27,7 +27,7 @@ env:
 
   DEVELOPER_DIR: /Applications/Xcode_12.4.app/Contents/Developer
 
-  MACOS_SDK: macosx11.3
+  MACOS_SDK: macosx11.1
   MACOS_DEST: "arch=x86_64"
 
 jobs:
