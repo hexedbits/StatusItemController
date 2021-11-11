@@ -29,12 +29,10 @@ let package = Package(
     targets: [
         .target(
             name: "StatusItemController",
-            path: "Sources",
-            exclude: ["Info.plist"]),
+            path: "Sources"),
         .testTarget(name: "StatusItemControllerTests",
                     dependencies: ["StatusItemController"],
-                    path: "Tests",
-                    exclude: ["Info.plist"])
+                    path: "Tests")
     ],
     swiftLanguageVersions: [.v5]
 )
