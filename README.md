@@ -1,4 +1,4 @@
-# StatusItemController  [![CI](https://github.com/hexedbits/StatusItemController/workflows/CI/badge.svg)](https://github.com/hexedbits/StatusItemController/actions) 
+# StatusItemController  [![CI](https://github.com/hexedbits/StatusItemController/workflows/CI/badge.svg)](https://github.com/hexedbits/StatusItemController/actions)
 
 *A "view controller" for menu bar Mac apps*
 
@@ -22,8 +22,8 @@ This component is used in [Red Eye](https://www.hexedbits.com/redeye/) and [Luci
 ## Requirements
 
 - macOS 10.12+
-- Swift 5.4+
-- Xcode 12.5+
+- Swift 5.5+
+- Xcode 13.0+
 - [SwiftLint](https://github.com/realm/SwiftLint)
 
 ## Installation
@@ -59,7 +59,7 @@ Interested in making contributions to this project? Please review the guides bel
 - [Support and Help](https://github.com/hexedbits/.github/blob/main/SUPPORT.md)
 - [Security Policy](https://github.com/hexedbits/.github/blob/main/SECURITY.md)
 
-Also, consider [sponsoring this project](https://www.jessesquires.com/sponsor/) or [buying my apps](https://www.hexedbits.com)! ✌️
+Also consider [sponsoring this project](https://github.com/sponsors/jessesquires) or [buying my apps](https://www.hexedbits.com)! ✌️
 
 ## Credits
 
