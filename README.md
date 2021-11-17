@@ -50,6 +50,10 @@ Alternatively, you can add the package [directly via Xcode](https://developer.ap
 
 You can read the [documentation here](https://hexedbits.github.io/StatusItemController). Generated with [jazzy](https://github.com/realm/jazzy). Hosted by [GitHub Pages](https://pages.github.com).
 
+## Notes on Testing
+
+Unfortunately, `StatusItemController` cannot be tested directly. Attempting to create an `NSStatusItem` _outside_ of an app context throws an assert, which makes sense. Thus, in order to test `StatusItemController` it must be embedded in an app. Tests can be found in the Example App test suite. See [#15](https://github.com/hexedbits/StatusItemController/issues/15) for more details.
+
 ## Contributing
 
 Interested in making contributions to this project? Please review the guides below.
