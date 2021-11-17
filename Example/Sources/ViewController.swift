@@ -10,13 +10,9 @@
 //
 //  Copyright © 2020-present Jesse Squires, Hexed Bits
 //  https://www.hexedbits.com
-//
+// 
 
-import AppKit
-@testable import StatusItemController
-import XCTest
+import Cocoa
+import StatusItemController
 
-/// - Note: see ExampleAppTests instead.
-/// Unfortunately, `StatusItemController` cannot be tested directly.
-/// It requires being embedded in an app.
-final class StatusItemControllerTests: XCTestCase { }
+final class ViewController: NSViewController { }

@@ -1,4 +1,4 @@
-// swift-tools-version:5.4
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 //
 //  Created by Jesse Squires
@@ -29,12 +29,10 @@ let package = Package(
     targets: [
         .target(
             name: "StatusItemController",
-            path: "Sources",
-            exclude: ["Info.plist"]),
+            path: "Sources"),
         .testTarget(name: "StatusItemControllerTests",
                     dependencies: ["StatusItemController"],
-                    path: "Tests",
-                    exclude: ["Info.plist"])
+                    path: "Tests")
     ],
     swiftLanguageVersions: [.v5]
 )

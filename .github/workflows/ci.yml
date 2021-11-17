@@ -15,32 +15,30 @@ on:
   pull_request:
     branches:
       - main
-    paths:
-      - '.github/workflows/ci.yml'
-      - 'Sources/**/*.*'
-      - 'Tests/**/*.*'
-      - 'Example/**/*.*'
 
 env:
   PROJECT: StatusItemController.xcodeproj
   SCHEME: StatusItemController
 
-  DEVELOPER_DIR: /Applications/Xcode_12.4.app/Contents/Developer
+  EXAMPLE_PROJECT: Example/ExampleApp.xcodeproj
+  EXAMPLE_SCHEME: ExampleApp
 
-  MACOS_SDK: macosx11.1
+  DEVELOPER_DIR: /Applications/Xcode_13.1.app/Contents/Developer
+
+  MACOS_SDK: macosx12.0
   MACOS_DEST: "arch=x86_64"
 
 jobs:
   env-details:
     name: Environment details
-    runs-on: macOS-latest
+    runs-on: macOS-11
     steps:
       - name: xcode version
         run: xcodebuild -version -sdk
 
   test-macOS:
-    name: Unit Tests
-    runs-on: macOS-latest
+    name: Tests
+    runs-on: macOS-11
     steps:
       - name: git checkout
         uses: actions/checkout@v2
@@ -51,6 +49,16 @@ jobs:
           xcodebuild clean test \
               -project "$PROJECT" \
               -scheme "$SCHEME" \
+              -sdk "$MACOS_SDK" \
+              -destination "$MACOS_DEST" \
+              ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO | xcpretty -c
+
+      - name: ui tests
+        run: |
+          set -o pipefail
+          xcodebuild clean test \
+              -project "$EXAMPLE_PROJECT" \
+              -scheme "$EXAMPLE_SCHEME" \
               -sdk "$MACOS_SDK" \
               -destination "$MACOS_DEST" \
               ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO | xcpretty -c

@@ -1,4 +1,10 @@
-//
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>FILEHEADER</key>
+<string>
 //  Created by Jesse Squires
 //  https://www.jessesquires.com
 //
@@ -10,13 +16,6 @@
 //
 //  Copyright © 2020-present Jesse Squires, Hexed Bits
 //  https://www.hexedbits.com
-//
-
-import AppKit
-@testable import StatusItemController
-import XCTest
-
-/// - Note: see ExampleAppTests instead.
-/// Unfortunately, `StatusItemController` cannot be tested directly.
-/// It requires being embedded in an app.
-final class StatusItemControllerTests: XCTestCase { }
+// </string>
+</dict>
+</plist>
