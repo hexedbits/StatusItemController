@@ -2,12 +2,24 @@
 
 The changelog for `StatusItemController`. Also see the [releases](https://github.com/hexedbits/StatusItemController/releases) on GitHub.
 
----
-
 NEXT
 ----
 
-- Upgraded to Swift 5.4 and Xcode 12.5
+- TBA
+
+1.2.0
+-----
+
+This release closes the [1.2.0 milestone](https://github.com/hexedbits/StatusItemController/milestone/2?closed=1).
+
+### Changes
+- Upgraded to Swift 5.5 and Xcode 13 (#27)
+- Various project infra updates (#27)
+- Added an example app project (#4)
+
+### Fixes
+
+- Resolved unit testing issue (#15)
 
 1.1.0
 -----
