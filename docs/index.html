@@ -16,19 +16,19 @@
     <a title="StatusItemController  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">StatusItemController 1.1.0 Docs</a> (100% documented)</p>
-        <p class="header-right"><a href="https://github.com/hexedbits/StatusItemController"><img src="img/gh.png"/>View on GitHub</a></p>
-        <p class="header-right">
+        <p><a href="index.html">StatusItemController 1.2.0 Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/hexedbits/StatusItemController"><img src="img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
           </form>
-        </p>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="index.html">StatusItemController Reference</a>
-        <img id="carat" src="img/carat.png" />
+        <img id="carat" src="img/carat.png" alt=""/>
         StatusItemController  Reference
       </p>
     </div>
@@ -63,11 +63,11 @@
         <section>
           <section class="section">
             
-            <h1 id='statusitemcontroller' class='heading'>StatusItemController</h1>
-
-<p><a href="https://github.com/hexedbits/StatusItemController/actions"><img src="https://github.com/hexedbits/StatusItemController/workflows/CI/badge.svg" alt="Actions Status"></a></p>
+            <h1 id='statusitemcontroller-a-href-https-github-com-hexedbits-statusitemcontroller-actions-img-src-https-github-com-hexedbits-statusitemcontroller-workflows-ci-badge-svg-alt-ci-a' class='heading'>StatusItemController  <a href="https://github.com/hexedbits/StatusItemController/actions"><img src="https://github.com/hexedbits/StatusItemController/workflows/CI/badge.svg" alt="CI"></a></h1>
 
 <p><em>A &ldquo;view controller&rdquo; for menu bar Mac apps</em></p>
+
+<p><a href="https://swiftpackageindex.com/hexedbits/StatusItemController"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fhexedbits%2FStatusItemController%2Fbadge%3Ftype%3Dswift-versions" alt=""></a> <br> <a href="https://swiftpackageindex.com/hexedbits/StatusItemController"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fhexedbits%2FStatusItemController%2Fbadge%3Ftype%3Dplatforms" alt=""></a></p>
 <h2 id='about' class='heading'>About</h2>
 
 <p>This library provides a <code><a href="Classes/StatusItemController.html">StatusItemController</a></code> component that you can use to create menu bar apps, or apps with menu bar items in macOS.</p>
@@ -90,8 +90,8 @@
 
 <ul>
 <li>macOS 10.12+</li>
-<li>Swift 5.3+</li>
-<li>Xcode 12.0+</li>
+<li>Swift 5.5+</li>
+<li>Xcode 13.0+</li>
 <li><a href="https://github.com/realm/SwiftLint">SwiftLint</a></li>
 </ul>
 <h2 id='installation' class='heading'>Installation</h2>
@@ -110,6 +110,9 @@
 <h2 id='documentation' class='heading'>Documentation</h2>
 
 <p>You can read the <a href="https://hexedbits.github.io/StatusItemController">documentation here</a>. Generated with <a href="https://github.com/realm/jazzy">jazzy</a>. Hosted by <a href="https://pages.github.com">GitHub Pages</a>.</p>
+<h2 id='notes-on-testing' class='heading'>Notes on Testing</h2>
+
+<p>Unfortunately, <code><a href="Classes/StatusItemController.html">StatusItemController</a></code> cannot be tested directly. Attempting to create an <code>NSStatusItem</code> <em>outside</em> of an app context throws an assert, which makes sense. Thus, in order to test <code><a href="Classes/StatusItemController.html">StatusItemController</a></code> it must be embedded in an app. Tests can be found in the Example App test suite. See <a href="https://github.com/hexedbits/StatusItemController/issues/15">#15</a> for more details.</p>
 <h2 id='contributing' class='heading'>Contributing</h2>
 
 <p>Interested in making contributions to this project? Please review the guides below.</p>
@@ -121,7 +124,7 @@
 <li><a href="https://github.com/hexedbits/.github/blob/main/SECURITY.md">Security Policy</a></li>
 </ul>
 
-<p>Also, consider <a href="https://www.jessesquires.com/sponsor/">sponsoring this project</a> or <a href="https://www.hexedbits.com">buying my apps</a>! ✌️</p>
+<p>Also consider <a href="https://github.com/sponsors/jessesquires">sponsoring this project</a> or <a href="https://www.hexedbits.com">buying my apps</a>! ✌️</p>
 <h2 id='credits' class='heading'>Credits</h2>
 
 <p>Created and maintained by <a href="https://www.jessesquires.com"><strong>Jesse Squires</strong></a>.</p>
@@ -136,11 +139,10 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://jessesquires.com" target="_blank" rel="external">Jesse Squires</a>. All rights reserved. (Last updated: 2021-03-24)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://jessesquires.com" target="_blank" rel="external noopener">Jesse Squires</a>. All rights reserved. (Last updated: 2021-11-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>
