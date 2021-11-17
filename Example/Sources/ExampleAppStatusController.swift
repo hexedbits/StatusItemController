@@ -16,7 +16,7 @@ import AppKit
 import Foundation
 import StatusItemController
 
-final class ExampleAppStatusController: StatusItemController {
+class ExampleAppStatusController: StatusItemController {
 
     init() {
         super.init(image: NSImage(named: "StatusIcon")!)

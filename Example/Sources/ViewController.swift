@@ -15,6 +15,4 @@
 import Cocoa
 import StatusItemController
 
-final class ViewController: NSViewController {
-
-}
+final class ViewController: NSViewController { }

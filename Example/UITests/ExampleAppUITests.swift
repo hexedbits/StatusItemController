@@ -40,6 +40,7 @@ final class ExampleAppUITests: XCTestCase {
         XCTAssertTrue(menuBarsQuery.menuItems["Version 1.0"].exists)
         XCTAssertTrue(menuBarsQuery.menuItems["Quit"].exists)
 
+        statusItem.click()
         statusItem.rightClick()
         XCTAssertTrue(menuBarsQuery.menuItems["Option 1"].waitForExistence(timeout: 10))
         XCTAssertTrue(menuBarsQuery.menuItems["Option 2"].exists)
