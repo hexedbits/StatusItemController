@@ -12,7 +12,7 @@
 PROJECT="StatusItemController.xcodeproj"
 SCHEME="StatusItemController"
 
-VERSION="0.45.0"
+VERSION="0.46.2"
 
 FOUND=$(swiftlint version)
 LINK="https://github.com/realm/SwiftLint"
