@@ -6,13 +6,13 @@ Pod::Spec.new do |s|
    s.summary = 'A "view controller" for menu bar Mac apps'
    s.homepage = 'https://github.com/hexedbits/StatusItemController'
    s.documentation_url = 'https://hexedbits.github.io/StatusItemController'
-   s.social_media_url = 'https://twitter.com/jesse_squires'
+   s.social_media_url = 'https://www.jessesquires.com'
    s.author = 'Jesse Squires'
 
    s.source = { :git => 'https://github.com/hexedbits/StatusItemController.git', :tag => s.version }
    s.source_files = 'Sources/*.swift'
 
-   s.swift_version = '5.5'
+   s.swift_version = '5.9'
 
    s.osx.deployment_target = '10.12'
 
