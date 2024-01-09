@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
    s.swift_version = '5.9'
 
-   s.osx.deployment_target = '10.15'
+   s.osx.deployment_target = '10.14'
 
    s.requires_arc = true
 end
