@@ -67,18 +67,18 @@ final class TestController: ExampleAppStatusController {
     var leftClickExpectation: XCTestExpectation?
     var rightClickExpectation: XCTestExpectation?
 
-    override public func buildMenu() -> NSMenu {
+    override func buildMenu() -> NSMenu {
         self.buildMenuExpectation?.fulfill()
         return super.buildMenu()
     }
 
-    override public func leftClickAction() {
+    override func leftClickAction() {
         super.leftClickAction()
 
         self.leftClickExpectation!.fulfill()
     }
 
-    override public func rightClickAction() {
+    override func rightClickAction() {
         super.rightClickAction()
 
         self.rightClickExpectation!.fulfill()

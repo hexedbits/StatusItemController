@@ -24,10 +24,6 @@ final class ExampleAppUITests: XCTestCase {
         XCUIApplication().launch()
     }
 
-    override func tearDownWithError() throws {
-        try super.tearDownWithError()
-    }
-
     func test_StatusItemController() {
         let app = XCUIApplication()
         let statusItem = app.children(matching: .menuBar).element(boundBy: 1).children(matching: .statusItem).element
