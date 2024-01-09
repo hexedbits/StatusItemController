@@ -19,7 +19,7 @@ import PackageDescription
 let package = Package(
     name: "StatusItemController",
     platforms: [
-        .macOS(.v10_12)
+        .macOS(.v10_15)
     ],
     products: [
         .library(

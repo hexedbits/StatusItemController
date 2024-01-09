@@ -5,6 +5,7 @@ The changelog for `StatusItemController`. Also see the [releases](https://github
 NEXT
 ----
 
+- Now requires minimum macOS 10.15
 - TBA
 
 1.2.0
