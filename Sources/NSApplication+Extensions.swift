@@ -15,7 +15,6 @@
 import AppKit
 
 extension NSApplication {
-
     /// Returns `true` if the application's current event is `.rightMouseUp` or equivalent.
     /// Returns `false` otherwise.
     public var isCurrentEventRightClickUp: Bool {

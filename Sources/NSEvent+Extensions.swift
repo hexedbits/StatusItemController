@@ -12,10 +12,10 @@
 //  https://www.hexedbits.com
 // 
 
+import AppKit
 import Cocoa
 
 extension NSEvent {
-
     /// Returns `true` if the event is `.rightMouseUp` or equivalent.
     /// Returns `false` otherwise.
     public var isRightClickUp: Bool {

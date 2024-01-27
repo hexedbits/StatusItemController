@@ -2,11 +2,15 @@
 
 The changelog for `StatusItemController`. Also see the [releases](https://github.com/hexedbits/StatusItemController/releases) on GitHub.
 
-NEXT
-----
+2.0.0
+-----
+
+### Changes
 
 - Now requires minimum macOS 10.15
-- TBA
+- By default, `StatusItemController` now sets the status item `tooltip` to the app name (based on the main bundle).
+- `NSMenuItem` convenience init now accepts an optional image. It is `nil` by default.
+
 
 1.2.0
 -----
@@ -21,6 +25,7 @@ This release closes the [1.2.0 milestone](https://github.com/hexedbits/StatusIte
 ### Fixes
 
 - Resolved unit testing issue (#15)
+
 
 1.1.0
 -----
@@ -40,6 +45,7 @@ convenience init(title: String,
                  keyEquivalent: String = "",
                  isEnabled: Bool = true)
 ```
+
 
 1.0.0
 -----
