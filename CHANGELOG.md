@@ -7,7 +7,7 @@ The changelog for `StatusItemController`. Also see the [releases](https://github
 
 ### Changes
 
-- Now requires minimum macOS 10.15
+- Now requires minimum macOS 11.0
 - By default, `StatusItemController` now sets the status item `tooltip` to the app name (based on the main bundle).
 - `NSMenuItem` convenience init now accepts an optional image. It is `nil` by default.
 

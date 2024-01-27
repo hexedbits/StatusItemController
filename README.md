@@ -21,7 +21,7 @@ This component is used in [Red Eye](https://www.hexedbits.com/redeye/) and [Luci
 
 ## Requirements
 
-- macOS 10.15+
+- macOS 11.0+
 - Swift 5.9+
 - Xcode 15.0+
 - [SwiftLint](https://github.com/realm/SwiftLint)

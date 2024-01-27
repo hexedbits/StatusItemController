@@ -10,7 +10,7 @@
 //
 //  Copyright © 2020-present Jesse Squires, Hexed Bits
 //  https://www.hexedbits.com
-// 
+//
 
 import AppKit
 
