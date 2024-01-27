@@ -31,7 +31,7 @@ This component is used in [Red Eye](https://www.hexedbits.com/redeye/) and [Luci
 ### [CocoaPods](http://cocoapods.org)
 
 ````ruby
-pod 'StatusItemController', '~> 1.0.0'
+pod 'StatusItemController', '~> 2.0.0'
 ````
 
 ### [Swift Package Manager](https://swift.org/package-manager/)
@@ -40,7 +40,7 @@ Add `StatusItemController` to the `dependencies` value of your `Package.swift`.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/hexedbits/StatusItemController", from: "1.0.0")
+    .package(url: "https://github.com/hexedbits/StatusItemController", from: "2.0.0")
 ]
 ```
 
