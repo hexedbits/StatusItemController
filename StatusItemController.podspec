@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
    s.name = 'StatusItemController'
-   s.version = '2.0.0'
+   s.version = '2.0.1'
    s.license = 'MIT'
 
    s.summary = 'A "view controller" for menu bar Mac apps'

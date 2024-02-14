@@ -2,6 +2,14 @@
 
 The changelog for `StatusItemController`. Also see the [releases](https://github.com/hexedbits/StatusItemController/releases) on GitHub.
 
+2.0.1
+-----
+
+### Changes
+
+- `StatusItemController` is now marked as `@MainActor`.
+
+
 2.0.0
 -----
 
