@@ -16,6 +16,7 @@ import Cocoa
 import StatusItemController
 
 @main
+@MainActor
 final class AppDelegate: NSObject, NSApplicationDelegate {
 
     let statusItemController = ExampleAppStatusController()

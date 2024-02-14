@@ -30,7 +30,7 @@ final class ExampleAppUITests: XCTestCase {
         let menuBarsQuery = app.menuBars
 
         statusItem.click()
-        XCTAssertTrue(menuBarsQuery.menuItems["Option 1"].waitForExistence(timeout: 10))
+        XCTAssertTrue(menuBarsQuery.menuItems["Option 1"].waitForExistence(timeout: 3))
         XCTAssertTrue(menuBarsQuery.menuItems["Option 2"].exists)
         XCTAssertTrue(menuBarsQuery.menuItems["Option 3"].exists)
         XCTAssertTrue(menuBarsQuery.menuItems["Version 1.0"].exists)
@@ -38,7 +38,7 @@ final class ExampleAppUITests: XCTestCase {
 
         statusItem.click()
         statusItem.rightClick()
-        XCTAssertTrue(menuBarsQuery.menuItems["Option 1"].waitForExistence(timeout: 10))
+        XCTAssertTrue(menuBarsQuery.menuItems["Option 1"].waitForExistence(timeout: 3))
         XCTAssertTrue(menuBarsQuery.menuItems["Option 2"].exists)
         XCTAssertTrue(menuBarsQuery.menuItems["Option 3"].exists)
         XCTAssertTrue(menuBarsQuery.menuItems["Version 1.0"].exists)

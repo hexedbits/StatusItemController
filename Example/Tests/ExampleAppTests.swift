@@ -18,6 +18,7 @@ import XCTest
 
 final class ExampleAppTests: XCTestCase {
 
+    @MainActor
     func test_DefaultInitValues() throws {
         let controller = TestController()
         let img = NSImage(named: "StatusIcon")!
@@ -26,6 +27,7 @@ final class ExampleAppTests: XCTestCase {
         XCTAssertEqual(controller.statusItem.length, NSStatusItem.squareLength)
     }
 
+    @MainActor
     func test_BuildMenuIsCalled_ForOpenMenu() {
         let controller = TestController()
 
@@ -36,6 +38,7 @@ final class ExampleAppTests: XCTestCase {
         self.wait(for: [expectation])
     }
 
+    @MainActor
     func test_BuildMenuIsNotCalled_ForHideMenu() {
         let controller = TestController()
 
@@ -47,6 +50,7 @@ final class ExampleAppTests: XCTestCase {
         self.wait(for: [expectation])
     }
 
+    @MainActor
     func test_LeftClickAction_isCalled() {
         let controller = TestController()
 
@@ -86,7 +90,7 @@ final class TestController: ExampleAppStatusController {
 }
 
 extension XCTestCase {
-    static let timeout = TimeInterval(10)
+    static let timeout = TimeInterval(3)
 
     func wait(for expectations: [XCTestExpectation]) {
         self.wait(for: expectations, timeout: Self.timeout)
